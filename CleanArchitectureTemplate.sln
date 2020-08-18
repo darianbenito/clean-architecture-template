@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureTemplate.Core", "CleanArchitectureTemplate.Core\CleanArchitectureTemplate.Core.csproj", "{0C055647-E8E5-4D2F-A758-ADE13488EC8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitectureTemplate.Core", "CleanArchitectureTemplate.Core\CleanArchitectureTemplate.Core.csproj", "{0C055647-E8E5-4D2F-A758-ADE13488EC8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureTemplate.Infrastructure", "CleanArchitectureTemplate.Infrastructure\CleanArchitectureTemplate.Infrastructure.csproj", "{DB39B600-F96C-41AF-AF1B-B4D327619387}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitectureTemplate.Infrastructure", "CleanArchitectureTemplate.Infrastructure\CleanArchitectureTemplate.Infrastructure.csproj", "{DB39B600-F96C-41AF-AF1B-B4D327619387}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureTemplate.Api", "CleanArchitectureTemplate.Api\CleanArchitectureTemplate.Api.csproj", "{39DBA68E-11C6-42A0-8BDA-C7EB253D6888}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitectureTemplate.Api", "CleanArchitectureTemplate.Api\CleanArchitectureTemplate.Api.csproj", "{39DBA68E-11C6-42A0-8BDA-C7EB253D6888}"
 	ProjectSection(ProjectDependencies) = postProject
 		{DB39B600-F96C-41AF-AF1B-B4D327619387} = {DB39B600-F96C-41AF-AF1B-B4D327619387}
 		{0C055647-E8E5-4D2F-A758-ADE13488EC8B} = {0C055647-E8E5-4D2F-A758-ADE13488EC8B}
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureTemplate.UnitTest", "CleanArchitectureTemplate.UnitTest\CleanArchitectureTemplate.UnitTest.csproj", "{46327895-F8E1-408A-8971-C6A74A2F3007}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,10 @@ Global
 		{39DBA68E-11C6-42A0-8BDA-C7EB253D6888}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39DBA68E-11C6-42A0-8BDA-C7EB253D6888}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39DBA68E-11C6-42A0-8BDA-C7EB253D6888}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46327895-F8E1-408A-8971-C6A74A2F3007}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46327895-F8E1-408A-8971-C6A74A2F3007}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46327895-F8E1-408A-8971-C6A74A2F3007}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46327895-F8E1-408A-8971-C6A74A2F3007}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
