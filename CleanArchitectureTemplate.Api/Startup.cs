@@ -46,7 +46,7 @@ namespace CleanArchitectureTemplate.Api
 
             // TODO get from config
 
-            const string coreLogDirectory = "";
+            const string coreLogDirectory = "D:\\";
 
             services.AddTransient<ICoreLogger>(x => new NLogCoreLogger(coreLogDirectory));
 
