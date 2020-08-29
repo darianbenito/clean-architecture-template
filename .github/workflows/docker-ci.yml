@@ -12,9 +12,9 @@ jobs:
       - name: Check out the repo
         uses: actions/checkout@v2
       - name: Docker build
-        run: docker build ./clean-architecture-template/CleanArchitectureTemplate.Api -t clean-architecture-template/CleanArchitectureTemplate.Api:latest
+        run: docker build ./clean-architecture-template/CleanArchitectureTemplate.Api -t CleanArchitectureTemplateApi
       - name: Push to Docker Hub
-        uses: docker push "clean-architecture-template/CleanArchitectureTemplate.Api:latest"
+        uses: docker push CleanArchitectureTemplateApi
         with:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_PASSWORD }}
