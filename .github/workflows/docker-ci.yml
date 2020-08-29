@@ -14,7 +14,7 @@ jobs:
       - name: Docker build
         run: docker build ./clean-architecture-template/CleanArchitectureTemplate.Api -t clean-architecture-template/CleanArchitectureTemplate.Api:latest
       - name: Push to Docker Hub
-        uses: docker push clean-architecture-template/CleanArchitectureTemplate.Api:latest
+        uses: docker push "clean-architecture-template/CleanArchitectureTemplate.Api:latest"
         with:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_PASSWORD }}
