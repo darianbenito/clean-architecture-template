@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using CleanArchitectureTemplate.Api.Dtos;
 using CleanArchitectureTemplate.Api.OutputPorts;
 using CleanArchitectureTemplate.Core.Contracts.UseCases.Cruds.EntityCrudUseCases.Create;
@@ -51,6 +52,14 @@ namespace CleanArchitectureTemplate.Api.Controllers
             await _createFooUseCase.ExecuteAsync(createFooUseCaseRequest, createFooOutputPort);
 
             return createFooOutputPort.ActionResult;
+        }
+
+        [HttpGet]
+        public IActionResult GetAll()
+        {
+            List<Foo> foos = new List<Foo> { new Foo { Id = 1, Name = "Hello" } };
+
+            return new OkObjectResult(foos);
         }
     }
 }

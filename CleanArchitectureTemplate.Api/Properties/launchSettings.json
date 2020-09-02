@@ -18,13 +18,13 @@
       }
     },
     "CleanArchitectureTemplate.Api": {
-      "commandName": "Project",
-      "launchBrowser": true,
-      "launchUrl": "foo",
-      "applicationUrl": "http://localhost:5000",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+        "commandName": "Project",
+        "launchBrowser": true,
+        "launchUrl": "foo",
+        "applicationUrl": "http://localhost:51898",
+        "environmentVariables": {
+            "ASPNETCORE_ENVIRONMENT": "Development"
+        }
     }
   }
 }
