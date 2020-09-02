@@ -57,7 +57,7 @@ namespace CleanArchitectureTemplate.Api.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            List<Foo> foos = new List<Foo> { new Foo { Id = 1, Name = "Hello" } };
+            List<Foo> foos = new List<Foo> { new Foo { Id = 1, Name = "Hello" }, new Foo { Id = 2, Name = "World" } };
 
             return new OkObjectResult(foos);
         }
