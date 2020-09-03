@@ -25,3 +25,4 @@ ENV ASPNETCORE_URLS http://+:51898
 WORKDIR /app
 COPY --from=build-env /app/CleanArchitectureTemplate.Api/out .
 ENTRYPOINT ["dotnet", "CleanArchitectureTemplate.Api.dll"]
+EXPOSE 51898
