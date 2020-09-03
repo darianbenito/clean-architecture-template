@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using CleanArchitectureTemplate.Core.Contracts.EntitiesValidators;
 using CleanArchitectureTemplate.Core.Contracts.Logger;
@@ -47,7 +48,9 @@ namespace CleanArchitectureTemplate.Api
 
             // TODO get from config
 
-            string coreLogDirectory = Directory.GetCurrentDirectory();
+            ////string coreLogDirectory = Directory.GetCurrentDirectory();
+
+            string coreLogDirectory = string.Empty;
 
             services.AddTransient<ICoreLogger>(x => new NLogCoreLogger(coreLogDirectory));
 
