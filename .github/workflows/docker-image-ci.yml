@@ -12,10 +12,10 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
-      - name: Push to Docker Hub
+      - name: build the root Dockerfile, tag the image as darianbenito/clean-architecture-template-repository:latest, log in to Docker Hub using GitHub secrets, and push the image to the Docker Hub repository darianbenito/clean-architecture-template-repository
         uses: docker/build-push-action@v1
         with:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_PASSWORD }}
           repository: darianbenito/clean-architecture-template-repository
-          tag_with_ref: true
+          tags: latest
