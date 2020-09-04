@@ -21,7 +21,7 @@ RUN dotnet publish -c Release -o out
 
 # Build runtime image
 #### FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS runtime
-FROM mcr.microsoft.com/dotnet/core/runtime:3.1-focal AS runtime
+FROM mcr.microsoft.com/dotnet/core/runtime:3.1-buster-slim AS runtime
 ENV ASPNETCORE_URLS http://+:51898
 WORKDIR /app
 COPY --from=build-env /app/CleanArchitectureTemplate.Api/out .
