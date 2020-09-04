@@ -5,7 +5,7 @@ Template based on [Clean Architecture](http://blog.cleancoder.com/uncle-bob/2012
 ### - Core (net standard) - Business logic (only known by the Core)
 Main responsibilities:
 1. Definition of domain entities.
-1. Definition of contracts (interfaces) for repositories, services (mail delivery service, etc.), use cases (including OutputPorts).
+1. Definition of contracts (interfaces) for repositories, services (mail delivery service, etc), use cases (including OutputPorts).
 1. Implementation of use cases. They may require interacting with wrappers, third-party applications, etc.
 
 ------------
@@ -13,7 +13,7 @@ Main responsibilities:
 
 ### - Infrastructure (net standard) - Does not know business logic
 Main responsibilities:
-1. Implement corresponding contracts (interfaces) defined by the Core (repositories, mail delivery service, etc.)
+1. Implement corresponding contracts (interfaces) defined by the Core (repositories, mail delivery service, etc)
 
 ------------
 
